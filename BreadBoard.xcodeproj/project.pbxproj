@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		014B96C425CC556C00405200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014B96C325CC556C00405200 /* Preview Assets.xcassets */; };
 		014B96C625CC556C00405200 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96C525CC556C00405200 /* Persistence.swift */; };
 		014B96C925CC556C00405200 /* BreadBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 014B96C725CC556C00405200 /* BreadBoard.xcdatamodeld */; };
+		014B96E225CC733200405200 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96E125CC733200405200 /* Device.swift */; };
+		014B96E625CC735500405200 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96E525CC735500405200 /* Connector.swift */; };
+		014B96E925CC737C00405200 /* WorkSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96E825CC737C00405200 /* WorkSpace.swift */; };
+		014B96ED25CF017100405200 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96EC25CF017100405200 /* MockData.swift */; };
+		014B96F225CF050100405200 /* BreadBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96F125CF050000405200 /* BreadBoardView.swift */; };
+		014B96F725CF063100405200 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = 014B96F625CF063100405200 /* Neumorphic */; };
+		014B96FA25CF091A00405200 /* ConnectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B96F925CF091A00405200 /* ConnectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		014B96C525CC556C00405200 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		014B96C825CC556C00405200 /* BreadBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreadBoard.xcdatamodel; sourceTree = "<group>"; };
 		014B96CA25CC556C00405200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014B96E125CC733200405200 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		014B96E525CC735500405200 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		014B96E825CC737C00405200 /* WorkSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpace.swift; sourceTree = "<group>"; };
+		014B96EC25CF017100405200 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		014B96F125CF050000405200 /* BreadBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadBoardView.swift; sourceTree = "<group>"; };
+		014B96F925CF091A00405200 /* ConnectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014B96F725CF063100405200 /* Neumorphic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,11 @@
 		014B96BB25CC556800405200 /* BreadBoard */ = {
 			isa = PBXGroup;
 			children = (
+				014B96F025CF04ED00405200 /* Views */,
+				014B96EB25CF00E200405200 /* MockData */,
+				014B96E025CC732200405200 /* ViewModels */,
+				014B96D225CC5E7400405200 /* Protocols */,
+				014B96D125CC5E5700405200 /* Models */,
 				014B96BC25CC556800405200 /* BreadBoardApp.swift */,
 				014B96BE25CC556800405200 /* ContentView.swift */,
 				014B96C025CC556C00405200 /* Assets.xcassets */,
@@ -75,6 +94,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		014B96D125CC5E5700405200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				014B96E125CC733200405200 /* Device.swift */,
+				014B96E525CC735500405200 /* Connector.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		014B96D225CC5E7400405200 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		014B96E025CC732200405200 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				014B96E825CC737C00405200 /* WorkSpace.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		014B96EB25CF00E200405200 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				014B96EC25CF017100405200 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		014B96F025CF04ED00405200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				014B96F125CF050000405200 /* BreadBoardView.swift */,
+				014B96F925CF091A00405200 /* ConnectorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +151,9 @@
 			dependencies = (
 			);
 			name = BreadBoard;
+			packageProductDependencies = (
+				014B96F625CF063100405200 /* Neumorphic */,
+			);
 			productName = BreadBoard;
 			productReference = 014B96B925CC556800405200 /* BreadBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 014B96B025CC556800405200;
+			packageReferences = (
+				014B96F525CF063100405200 /* XCRemoteSwiftPackageReference "neumorphic" */,
+			);
 			productRefGroup = 014B96BA25CC556800405200 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +213,13 @@
 				014B96C625CC556C00405200 /* Persistence.swift in Sources */,
 				014B96C925CC556C00405200 /* BreadBoard.xcdatamodeld in Sources */,
 				014B96BF25CC556800405200 /* ContentView.swift in Sources */,
+				014B96E625CC735500405200 /* Connector.swift in Sources */,
+				014B96FA25CF091A00405200 /* ConnectorView.swift in Sources */,
+				014B96E925CC737C00405200 /* WorkSpace.swift in Sources */,
+				014B96ED25CF017100405200 /* MockData.swift in Sources */,
+				014B96F225CF050100405200 /* BreadBoardView.swift in Sources */,
 				014B96BD25CC556800405200 /* BreadBoardApp.swift in Sources */,
+				014B96E225CC733200405200 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		014B96F525CF063100405200 /* XCRemoteSwiftPackageReference "neumorphic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/costachung/neumorphic/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		014B96F625CF063100405200 /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014B96F525CF063100405200 /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		014B96C725CC556C00405200 /* BreadBoard.xcdatamodeld */ = {
